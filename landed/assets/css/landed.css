@@ -1,0 +1,23 @@
+/*
+  landed.css
+  The main CSS stylesheet of the Landed Website (a pretend company website)
+  (c) Donald Leung.  All rights reserved.
+*/
+
+#invalidEmailAddress {
+  color: black;
+  font-weight: bolder;
+}
+
+#message {
+  height: 300px;
+  resize: none;
+}
+
+#emailSent {
+  color: green;
+}
+
+#emailIncomplete {
+  color: red;
+}

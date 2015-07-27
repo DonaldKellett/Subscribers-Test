@@ -1,0 +1,18 @@
+/*
+  admin.css
+  A CSS stylesheet for the Admin Panel
+  (c) Donald Leung.  All rights reserved.
+*/
+
+#message, #subscribeMessage {
+  resize: none;
+  height: 250px;
+}
+
+#noSend, #subscribeNoSend {
+  color: red;
+}
+
+#sent, #subscribeSent {
+  color: green;
+}

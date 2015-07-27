@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!-- skel-baseline v2.0.1 | (c) n33 | getskel.com | MIT licensed -->
+
+<!--
+	Note: If you are currently reading this text and you are not a Landed IT Developer, then YOU ARE A HACKER.
+	Anyone found hacking the Admin Panel of the Landed Website will be severely punished through the actions of the School or through THE ACTIONS OF THE LOCAL COURT if necessary.
+
+	Naaaaah ... don't worry ... this is just a pretend message! :D  The message above is null and void - feel free to check out the code below! :D
+-->
+
+<html>
+	<head>
+		<title>Landed | Admin</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1><a href="index.html">Landed <span style="font-size: 0.6em;">Admin</span></a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Admin</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>Admin Panel</h2>
+				<p>The Administrator Panel of the Landed Website - used to send emails to subscribers and more!</p>
+			</section>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<div class="row">
+					<div class="6u 12u(2)">
+						<h2>Email Form (for Specific Recipents)</h2>
+						<form>
+							<div class="row uniform">
+								<div class="12u">
+									<input type="email" id="email" placeholder="Enter the recipent's email here ... " />
+								</div>
+								<div class="12u">
+									<input type="text" id="subject" placeholder="Subject" />
+								</div>
+								<div class="12u">
+									<textarea id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="12u">
+									<input type="password" id="password" placeholder="Password" />
+								</div>
+								<div class="12u">
+									<p>
+										<a href="javascript:void(0)" class="button special" onclick="admin.sendEmail()">Send Email</a>
+										<input type="reset" value="Reset" />
+									</p>
+								</div>
+								<div class="12u">
+									<p id="noSend"></p>
+									<p id="sent"></p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="6u 12u(2)">
+						<h2>Landed News Email Form (for Subscribers)</h2>
+						<form>
+							<div class="row uniform">
+								<div class="12u">
+									<input type="text" id="subscribeSubject" placeholder="Enter the subject of the email here ... " />
+								</div>
+								<div class="12u">
+									<textarea id="subscribeMessage" placeholder="Enter the subscription news message here ... "></textarea>
+								</div>
+								<div class="12u">
+									<input type="password" id="subscribePassword" placeholder="Password" />
+								</div>
+								<div class="12u">
+									<p>
+										<a href="javascript:void(0)" class="button special" onclick="admin.publishNews()">Publish News</a>
+										<input type="reset" value="Reset" />
+									</p>
+								</div>
+								<div class="12u">
+									<p id="subscribeNoSend"><!--Invalid password.  The news was not published.--></p>
+									<p id="subscribeSent"><!--<span class="icon fa fa-check"></span> News Successfully Published--></p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="copyright">
+					&copy; Donald Leung. All rights reserved.
+				</div>
+			</footer>
+
+		<!-- My Stylesheets -->
+			<link rel="stylesheet" href="files/assets/css/admin.css" />
+
+		<!-- My Scripts -->
+			<script src="files/assets/js/admin.js"></script>
+			<script>
+				admin.init();
+			</script>
+
+	</body>
+</html>
