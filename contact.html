@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Landed | Contact</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1 id="logo"><a href="index.html">Landed</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Contact</h2>
+							<p>Feel free to contact us by using the contact form below when we are offline.</p>
+							<p>
+								<span style="font-size: smaller; font-style: italic;">Side Note: For some unknown reason, the message does not display properly when sent.  In that case it is okay to modify the message to restore the correct formatting.</span>
+							</p>
+						</header>
+
+						<!-- Contact Form -->
+
+						<form>
+							<div class="row uniform">
+								<div class="12u">
+									<input type="text" id="firstName" placeholder="First Name" />
+								</div>
+								<div class="12u">
+									<select id="department">
+										<option value="">- Choose a Department -</option>
+										<option value="IT Department">IT Department</option>
+										<option value="Finance Department">Finance Department</option>
+										<option value="Human Resources Department">Human Resources Department</option>
+										<option value="Production Department">Production Department</option>
+									</select>
+								</div>
+								<div class="12u">
+									<input type="text" id="summary" placeholder="Enter a summary here ... " />
+								</div>
+								<div class="12u">
+									<textarea id="message" placeholder="Message"></textarea>
+								</div>
+								<div class="12u">
+									<p>
+										<a href="javascript:void(0)" class="button special" onclick="landed.contact.sendEmail()">Send Email</a>
+										<input type="reset" value="Reset" />
+									</p>
+								</div>
+								<div class="12u">
+									<p>
+										<span id="emailSent"></span>
+										<span id="emailIncomplete"></span>
+									</p>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; Donald Leung. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+		<!-- My Scripts -->
+			<script src="landed/assets/js/landed.js"></script>
+			<script>
+			landed.init();
+			</script>
+
+		<!-- My Stylesheets -->
+			<link rel="stylesheet" href="landed/assets/css/landed.css" />
+
+	</body>
+</html>
